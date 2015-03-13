@@ -1,6 +1,6 @@
 # Description
 
-We are assessing a number of things, these include the design aspect of your solution, but mostly we are looking for good coding practices and your object oriented programming skills. We'll also look for automated tests.
+We are assessing a number of things, including the design aspect of your solution, code hygiene, readability and code structure (how easy it is for another programmer to grasp what your code does), reliability and robustness (are errors properly handled?), but mostly we are looking for good coding practices and your object oriented programming skills. We'll also look for automated tests.
 
 You may not use any external libraries to solve this problem, but you may use external libraries or tools for building or testing purposes.  Specifically, you may use unit testing libraries or build tools available for your chosen language (for example, JUnit). Please also include a brief explanation of your design and assumptions along with your code.
 
