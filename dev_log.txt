@@ -1,0 +1,8 @@
+********************************************************************************
+28/04/2016
+*******************************************************************************
+11:40 Inicianting project
+      looking how to set git remote
+      added https://github.com/Eliada/MarsRover to remote
+      added report.odt
+      seting up the environment       
