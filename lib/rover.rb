@@ -20,13 +20,13 @@ class Rover
 
   def forward
     case @facing
-      when 0
+      when 0 #"N"
         @position[1] += 1
-      when 1
+      when 1 #"E"
         @position[0] += 1
-      when 2
+      when 2 #"S"
         @position[1] -= 1
-      when 3
+      when 3 #"W"
         @position[0] -= 1
     end
   end
