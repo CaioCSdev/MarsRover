@@ -5,4 +5,14 @@
       looking how to set git remote
       added https://github.com/Eliada/MarsRover to remote
       added report.odt
-      seting up the environment       
+      seting up the environment
+13:23 lunch
+********************************************************************************
+29/04/2016
+*******************************************************************************
+13:10 updated report
+	  done rspec --init
+	  struturing project directories
+	  created Rover class
+	  created Rover class tests
+15:50 all tests falling "correctly" (TDD)

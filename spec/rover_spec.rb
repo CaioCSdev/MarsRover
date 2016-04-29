@@ -9,11 +9,11 @@ describe "Rover object" do
 	context "#spin while facing north" do
 		it "change facing 90 degrees to the right" do
 			@rover.spin("R")
-			expect(@rover.facing).to eq "E"
+			expect(@rover.facing).to eq 1
 		end
 		it "change facing 90 degrees to the left" do
 			@rover.spin("L")
-			expect(@rover.facing).to eq "W"
+			expect(@rover.facing).to eq 3
 		end
 	end
 
@@ -30,5 +30,4 @@ describe "Rover object" do
 			expect(position).to eq [0,0,"N"]
 		end
 	end
-
 end
