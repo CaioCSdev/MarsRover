@@ -11,8 +11,11 @@
 29/04/2016
 *******************************************************************************
 13:10 updated report
-	  done rspec --init
-	  struturing project directories
-	  created Rover class
-	  created Rover class tests
-15:50 all tests falling "correctly" (TDD)
+      done rspec --init
+      struturing project directories
+      created Rover class
+      created Rover class tests
+15:50 all tests falling "correctly" for rover (TDD)
+      done rover.rb
+      all tests falling "correctly" for plateau (TDD)
+      done plateau.rb
