@@ -1,6 +1,5 @@
 require 'rover'
 
-
 describe "Rover object" do
 	before :each do
   	@rover = Rover.new [0,0] , "N", 1
