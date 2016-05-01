@@ -19,19 +19,25 @@ class Rover
   end
 
   def forward
+    @position = in_front_of_me
+  end
+
+  def in_front_of_me
+    location = @position
     case @facing
       when 0 #"N"
-        @position[1] += 1
+        location[1] += 1
       when 1 #"E"
-        @position[0] += 1
+        location[0] += 1
       when 2 #"S"
-        @position[1] -= 1
+        location[1] -= 1
       when 3 #"W"
-        @position[0] -= 1
+        location[0] -= 1
     end
+    location
   end
 
   def get_position_with_facing
     [@position[0], @position[1], @direction[ @facing ] ]
-  end  
+  end
 end
