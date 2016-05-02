@@ -1,13 +1,13 @@
 #!/usr/bin/env ruby
 
 class Rover
-  attr_accessor :position, :facing, :number_id
+  attr_accessor :position, :facing, :id
 
   def initialize position, facing, number_id
     @direction = ["N", "E", "S", "W"]
     @position  = position
     @facing    = @direction.find_index{|face| face == facing}
-    @number_id = number_id
+    @id        = id
   end
 
   def spin(direction)
@@ -23,18 +23,19 @@ class Rover
   end
 
   def in_front_of_me
-    location = @position
+    x = @position[0]
+    y = @position[1]
     case @facing
       when 0 #"N"
-        location[1] += 1
+        y += 1
       when 1 #"E"
-        location[0] += 1
+        x += 1
       when 2 #"S"
-        location[1] -= 1
+        y -= 1
       when 3 #"W"
-        location[0] -= 1
+        x -= 1
     end
-    location
+    [x,y]
   end
 
   def get_position_with_facing
