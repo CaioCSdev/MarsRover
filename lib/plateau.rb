@@ -3,7 +3,9 @@
 class Plateau
   attr_accessor :grid
   def initialize(sizeX, sizeY)
-    @grid = Array.new sizeX, Array.new(sizeY, false) 
+    @grid = Array.new(sizeX+1) {Array.new(sizeY+1){false}}
+    @sizeX=sizeX
+    @sizeY=sizeY
   end
 
   def occupy_position(x, y)
@@ -16,6 +18,13 @@ class Plateau
   end
 
   def can_move_to?(x,y)
-    not @grid[x][y]
+    if x.between?(0,@sizeX)
+      if y.between?(0, @sizeY)
+        if !@grid[x][y]
+          return true
+        end
+      end
+    end
+    false
   end
 end

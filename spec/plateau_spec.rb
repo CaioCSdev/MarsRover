@@ -6,6 +6,20 @@ describe "Plateau object" do
   	@plateau.grid[3][3] = true
 	end
 
+  context "new plateau" do
+    it "should have all positions false except one" do
+      for i in 0..5 do
+        for j in 0..5 do
+          if(j == 3 and i == 3)
+            expect(@plateau.grid[i][j]).to eq(true)
+          else
+            expect(@plateau.grid[i][j]).to eq(false)
+          end
+        end
+      end
+    end
+  end
+
 	context "#occupy_position" do
 		it "should occupy a space" do
 			@plateau.occupy_position(0,0)
